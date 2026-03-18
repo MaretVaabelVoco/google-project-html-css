@@ -1,0 +1,84 @@
+/* elemendi põhine kujundamine */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family:
+    Google Sans,
+    Arial,
+    sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column; /* Asjad virna */
+  align-items: center; /* Horisontaalselt keskele */
+  justify-content: center; /* Vertikaalselt keskele */
+  height: 80vh; /* Ekraani kõrgus */
+  gap: 20px;
+}
+
+input {
+  flex: 1; /* Võtab kogu vaba ruumi ikoonide vahel */
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-size: 16px;
+
+  /* Need stiilid kolivad  .search-container klassi  */
+  /* padding: 12px 20px; 
+  border: 1px solid #dfe1e5;
+  border-radius: 24px; 
+  width: 400px; */
+}
+
+/* klassi põhine kujundamine */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px; /* Sisu ümber ruumi */
+  border: 1px solid #dfe1e5;
+  border-radius: 24px; /* Ümarad nurgad */
+  max-width: 600px; /* Võid muuta vastavalt vajadusele */
+  width: 100%;
+  max-height: 48px;
+}
+.search-container:hover,
+.search-container:focus {
+  border: 1px solid #80a4ed;
+}
+
+/* id põhilne kujundamine */
+#logo {
+  max-height: 92px;
+}
+
+.button-container button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+  color: #3c4043;
+  font-optical-sizing: none;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-container button:hover,
+button:focus {
+  border: 1px solid #80a4ed;
+}
+
+.offered-container {
+  display: flex;
+  align-items: center;
+  font-size: small;
+  line-height: 28px;
+}
+.offered-container a {
+  margin-left: 5px;
+}

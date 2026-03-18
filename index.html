@@ -4,17 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>Document</title>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Otse sisu juurde</a>
     <header>
-      <nav>Menüü lingid siia</nav>
+      <nav>
+        <!-- Menüü lingid siia -->
+      </nav>
     </header>
-    <main>
-      Sisu (logo ja otsing) siia
-      <img src="img/google_logo.svg" alt="Google logo" />
-      <input type="text" placeholder="Otsi Google'ist">
+    <main id="main-content">
+      <!-- Sisu (logo ja otsing) siia -->
+      <img id="logo" src="img/google_logo.svg" alt="Google logo" />
+      <div class="search-container">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Otsi Google'ist" />
+        <span class="material-symbols-outlined"> mic </span>
+      </div>
+      <div class="button-container">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+      </div>
+      <div class="offered-container">
+        <p>Google offered in:</p>
+        <a href="https://www.google.com/">eesti</a>
+        <a href="https://www.google.com/">русский</a>
+      </div>
     </main>
-    <footer>Jalus siia</footer>
+    <footer>
+      <!-- Jalus siia -->
+    </footer>
   </body>
 </html>
